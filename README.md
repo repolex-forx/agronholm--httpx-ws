@@ -1,1 +1,102 @@
-Initializing
+# Repolex Knowledge Graph of agronholm/httpx-ws
+
+RDF knowledge graph data for [agronholm/httpx-ws](https://github.com/agronholm/httpx-ws), parsed by [repolex](https://repolex.ai).
+
+> **Note**: This data is experimental and subject to change without notice.
+
+## How to use this data
+
+The easiest way to get started is to install the [rlex](https://github.com/repolex-ai/rlex) query tool:
+
+```bash
+cargo install --git https://github.com/repolex-ai/rlex
+```
+
+Verify the install:
+
+```bash
+rlex --help
+```
+
+**rlex is designed to be used primarily by LLMs in a terminal.** Start up your favorite AI assistant and ask it to use rlex. It handles the SPARQL — you just ask questions in plain English.
+
+To load this repo's data:
+
+```bash
+rlex download agronholm/httpx-ws
+```
+
+Consult `rlex --help` for other options, including SPARQL queries, HTTP server, and interactive visualization.
+
+## Data structure
+
+All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) (`.nq.gz`), a standard RDF format that can be loaded into any triplestore or graph database.
+
+```
+.
+├── aggregate
+│   ├── ast
+│   │   └── c9efdda0ce4f806302d432b087901657b971c245
+│   │       └── chunk-001.nq.gz
+│   └── repolex
+│       └── c9efdda0ce4f806302d432b087901657b971c245
+│           └── chunk-001.nq.gz
+├── blob
+│   ├── 032b8402efd43f5a37b0dbf63f85fa255b329aa9.nq.gz
+│   ├── 0bc6951e8449b43f183e0921a730e30bab016d8e.nq.gz
+│   ├── 0d7742d282ebbcc2d128ebe89edc6a43af8d0fea.nq.gz
+│   ├── 0facbf82aad16f189d9195c42d136b0ff7bedb92.nq.gz
+│   ├── 1e0a9205ea0f3d13f889351e904c62c118780ec0.nq.gz
+│   ├── 22fb1f902a9f8dced0c3180ed0187471396cbf8b.nq.gz
+│   ├── 31f6999fa5bc705a5e75b768afbda2e4a60f77d9.nq.gz
+│   ├── 3cc6b56668170164cc869b5b2fa5a394b9697023.nq.gz
+│   ├── 3ea977c71071c6044a511a6573dbfea4b753024e.nq.gz
+│   ├── 3ec3291fecb7b912a36332b21b65ba56949b7254.nq.gz
+│   ├── 434348e4c92aaa41b410f5245753d98a11add1cf.nq.gz
+│   ├── 612c7a5e0d17657e51018285d9850b8fa8e76174.nq.gz
+│   ├── 661dd81253fd39340b3d6474ffe406d255224de0.nq.gz
+│   ├── 66aece952850f913479b4d0c24f0590f635484e7.nq.gz
+│   ├── 6906d459b0f036cab93d33ab54380e6500d7adb9.nq.gz
+│   ├── 6d3f4a7d60e1cf1d8f5f9f403a7b8002a1457065.nq.gz
+│   ├── 88bfe824b65bf6809c038f22b9838f1ed75a650b.nq.gz
+│   ├── bd3c0a0752dde0b3d750535dc0b05f2a19a594ee.nq.gz
+│   ├── c19686bb7026e14f841fcd422f5c66e23cd4fac5.nq.gz
+│   ├── d6b4fa2a97e75e4c642c84ffe70bca3791d25a66.nq.gz
+│   ├── e52436526df0eec2762b2293d44c5469c92c57ce.nq.gz
+│   ├── e69de29bb2d1d6434b8b29ae775ad8c2e48c5391.nq.gz
+│   ├── eb8874e1e25c50d998c66f57b0536e6e10cadbfc.nq.gz
+│   ├── eca2996d7b8a7bd0ad6748d8b666040654c684e6.nq.gz
+│   ├── ef0b28896ffa5815f8b60c860784dd49d1baefd0.nq.gz
+│   ├── f7f5e7e7261750244fa29408df3937c0696b2666.nq.gz
+│   └── fb766024e05c3babf8167a36faa67946be83828d.nq.gz
+├── branch
+│   └── branch.nq.gz
+├── commit
+│   └── commit.nq.gz
+├── filetree
+│   └── c9efdda0ce4f806302d432b087901657b971c245.nq.gz
+└── tag
+    └── tag.nq.gz
+
+11 directories, 33 files
+```
+
+| Directory | What it contains |
+|-----------|-----------------|
+| `blob/` | Per-file AST graphs, content-addressed by git blob SHA. Each file in the source repo gets its own graph. |
+| `aggregate/ast/` | Combined AST graph per parsed commit. Merges all blob graphs for a snapshot of the entire codebase at that point. |
+| `aggregate/lsp/` | Language Server Protocol enrichment: resolved symbols, definitions, references, and type information. |
+| `aggregate/dataflow/` | Interprocedural data flow edges between functions and modules. |
+| `aggregate/repolex/` | Combined graph (AST + LSP + dataflow) per commit. |
+| `commit/` | Git commit metadata (author, date, message, parent links). |
+| `branch/` | Branch metadata. |
+| `tag/` | Tag metadata. |
+| `filetree/` | File tree snapshots per commit (which files existed and their blob SHAs). |
+| `audit/` | Code architecture and graph audit reports per commit. |
+
+## Source repository
+
+[agronholm/httpx-ws](https://github.com/agronholm/httpx-ws)
+
+---
+*Parsed on 2026-10-11 by [repolex](https://repolex.ai)*

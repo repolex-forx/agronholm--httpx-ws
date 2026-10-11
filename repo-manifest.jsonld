@@ -8,7 +8,7 @@
     {
       "@id": "https://repolex.ai/r/agronholm/httpx-ws/commit/c9efdda0ce4f806302d432b087901657b971c245",
       "git:hexsha": "c9efdda0ce4f806302d432b087901657b971c245",
-      "repolex:parseStatus": "metadata_complete"
+      "repolex:parseStatus": "ast_complete"
     }
   ]
 }

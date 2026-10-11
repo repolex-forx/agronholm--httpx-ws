@@ -1,0 +1,44 @@
+{
+  "manifest_version": "1.0",
+  "org": "agronholm",
+  "repo": "httpx-ws",
+  "versions": [
+    {
+      "commit": "c9efdda0ce4f806302d432b087901657b971c245",
+      "parsed_at": "2026-10-11T08:27:12.030529+00:00",
+      "filetree": "filetree/c9efdda0ce4f806302d432b087901657b971c245.nq.gz",
+      "blobs": [
+        "blob/612c7a5e0d17657e51018285d9850b8fa8e76174.nq.gz",
+        "blob/3ea977c71071c6044a511a6573dbfea4b753024e.nq.gz",
+        "blob/0d7742d282ebbcc2d128ebe89edc6a43af8d0fea.nq.gz",
+        "blob/0facbf82aad16f189d9195c42d136b0ff7bedb92.nq.gz",
+        "blob/f7f5e7e7261750244fa29408df3937c0696b2666.nq.gz",
+        "blob/ef0b28896ffa5815f8b60c860784dd49d1baefd0.nq.gz",
+        "blob/d6b4fa2a97e75e4c642c84ffe70bca3791d25a66.nq.gz",
+        "blob/c19686bb7026e14f841fcd422f5c66e23cd4fac5.nq.gz",
+        "blob/1e0a9205ea0f3d13f889351e904c62c118780ec0.nq.gz",
+        "blob/fb766024e05c3babf8167a36faa67946be83828d.nq.gz",
+        "blob/e52436526df0eec2762b2293d44c5469c92c57ce.nq.gz",
+        "blob/6d3f4a7d60e1cf1d8f5f9f403a7b8002a1457065.nq.gz",
+        "blob/bd3c0a0752dde0b3d750535dc0b05f2a19a594ee.nq.gz",
+        "blob/3ec3291fecb7b912a36332b21b65ba56949b7254.nq.gz",
+        "blob/6906d459b0f036cab93d33ab54380e6500d7adb9.nq.gz",
+        "blob/eca2996d7b8a7bd0ad6748d8b666040654c684e6.nq.gz",
+        "blob/032b8402efd43f5a37b0dbf63f85fa255b329aa9.nq.gz",
+        "blob/31f6999fa5bc705a5e75b768afbda2e4a60f77d9.nq.gz",
+        "blob/434348e4c92aaa41b410f5245753d98a11add1cf.nq.gz",
+        "blob/22fb1f902a9f8dced0c3180ed0187471396cbf8b.nq.gz",
+        "blob/eb8874e1e25c50d998c66f57b0536e6e10cadbfc.nq.gz",
+        "blob/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391.nq.gz",
+        "blob/3cc6b56668170164cc869b5b2fa5a394b9697023.nq.gz",
+        "blob/66aece952850f913479b4d0c24f0590f635484e7.nq.gz",
+        "blob/661dd81253fd39340b3d6474ffe406d255224de0.nq.gz",
+        "blob/88bfe824b65bf6809c038f22b9838f1ed75a650b.nq.gz",
+        "blob/0bc6951e8449b43f183e0921a730e30bab016d8e.nq.gz"
+      ]
+    }
+  ],
+  "commit": "commit/commit.nq.gz",
+  "branch": "branch/branch.nq.gz",
+  "tag": "tag/tag.nq.gz"
+}
